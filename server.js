@@ -20,10 +20,7 @@ connectDB().then(() => {
 
 // Security Middlewares
 app.use(helmet());
-app.use(cors({
-  origin: config.corsOrigin,
-  credentials: true,
-}));
+app.use(cors());
 
 // Body Parsers
 app.use(express.json());
