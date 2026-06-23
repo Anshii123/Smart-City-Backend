@@ -55,10 +55,10 @@ app.get('/', (req, res) => {
 app.use(notFoundHandler);
 app.use(errorHandler);
 
-const PORT = config.port;
-const HOST = '127.0.0.1';
-const server = app.listen(PORT, HOST, () => {
-  console.log(`Server running in ${config.env} mode on http://${HOST}:${PORT}`);
+const PORT = 3000;
+// const HOST = '127.0.0.1';
+const server = app.listen(PORT,  () => {
+  console.log(`Server running in ${config.env} mode on http://localhost:${PORT}`);
 });
 
 // Gracefully handle port already in use
