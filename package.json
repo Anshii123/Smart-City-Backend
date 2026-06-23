@@ -2,11 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Smart City Climate Platform Backend",
-  "main": "server.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "vercel-build": "npm install"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

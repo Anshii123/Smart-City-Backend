@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
 app.use(notFoundHandler);
 app.use(errorHandler);
 
-const PORT = 3000;
+const PORT = 5000;
 // const HOST = '127.0.0.1';
 const server = app.listen(PORT,  () => {
   console.log(`Server running in ${config.env} mode on http://localhost:${PORT}`);

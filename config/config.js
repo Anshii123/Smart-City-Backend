@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load env variables
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+dotenv.config();
 
 const config = {
   port: parseInt(process.env.PORT, 10) || 5000,
