@@ -59,7 +59,7 @@ export const loginUser = async (req, res, next) => {
       return next(error);
     }
 
-    const user = await User.findOne({ email }).select('+password');
+    const user = await User.findOne({ email });
 
     if (!user) {
       const error = new Error('Invalid credentials');
