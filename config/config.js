@@ -12,7 +12,7 @@ const config = {
   port: parseInt(process.env.PORT, 10) || 5000,
   env: process.env.NODE_ENV || 'development',
   corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:5173',
-  mongoUri: process.env.MONGO_URI || 'mongodb://localhost:27017/smart_city_climate',
+  mongoUri: process.env.MONGO_URI || 'mongodb+srv://anshigarg101209_db_user:yMZzYWKn8vz1jW9g@cluster0.kiaanos.mongodb.net/?appName=Cluster0',
   jwtSecret: process.env.JWT_SECRET || 'dev_jwt_secret_smart_city_climate_platform_2026',
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
 };
